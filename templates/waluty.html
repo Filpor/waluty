@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
        <title> Kalkulator walut</title>
@@ -8,8 +9,31 @@
             Kalkulator walut
         </h1>
         <form action='/waluty' method='POST'>
+            <label for ilosc>Ilość w PLN</label>
+            <br>
+            <input type="number" name='ilosc'>
+            <br>
+            <br>
             <label for="waluty">Wybierz walutę</label>
+            <br>
             <select name='waluty' id='waluty'>
-                <option value='Dolar Amerykański'>Dolar Amerykański</option>
+                <option value='USD'>USD</option>
+                <option value='AUD'>AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="HUF">HUF</option>
+                <option value="CHF">CHF</option>
+                <option value='GBP'>GBP</option>
+                <option value='JPY'>JPY</option>
+                <option value='CZK'>CZK</option>
+                <option value='DKK'>DKK</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value='SDR'>XDR</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Przelicz</button>
+        </form>
     </body>
 </html>
